@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 import Biscoito from '../../assets/image/biscoito.png'
 import frases from '../../assets/Data/frases';
@@ -13,9 +13,6 @@ function BiscoitoSorte() {
     {frases[index] === frase ? sortearFrase() : setFrase(frases[index]) }
   }
 
-  useEffect(() => {
-    sortearFrase()
-  },[])
 
   return (
     <div className='container'>
